@@ -1,0 +1,172 @@
+/*  
+   SHOPPING CART PAGE STYLES
+    */
+
+.cart-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+/* Left Section: Cart Items */
+.cart-left {
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.cart-header h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #0c1b33;
+}
+
+.price-label {
+    font-size: 0.9rem;
+    color: #565959;
+}
+
+.cart-divider {
+    height: 1px;
+    background-color: #ddd;
+    margin: 15px 0;
+}
+
+/* Individual Cart Item */
+.cart-item {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.cart-item-img {
+    flex: 0 0 180px;
+}
+
+.cart-item-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-details h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #0f1111;
+    margin-bottom: 5px;
+}
+
+.stock-status {
+    color: #007600;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.shipping-info {
+    color: #565959;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+}
+
+.qty-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #d5d9d9;
+    background-color: #f0f2f2;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.action-link {
+    color: #007185;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.action-link:hover {
+    text-decoration: underline;
+    color: #c45500;
+}
+
+.action-divider {
+    color: #ddd;
+}
+
+.cart-item-price {
+    flex: 0 0 100px;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.cart-subtotal-bottom {
+    text-align: right;
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+
+/* Right Section: Checkout Summary */
+.cart-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.checkout-box {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.free-shipping-bar {
+    margin-bottom: 15px;
+}
+
+.checkout-box h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.gift-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.checkout-btn {
+    width: 100%;
+    background-color: #ffd814;
+    border: 1px solid #fcd200;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: background-color 0.2s;
+}
+
+.checkout-btn:hover {
+    background-color: #f7ca00;
+}

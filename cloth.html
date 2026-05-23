@@ -1,0 +1,137 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow - Clothing & Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="cloth.css" />
+    
+</head>
+<body>
+    <header>
+        <div class="navbar"> 
+            <div class="nav-logo border" onclick="window.location.reload();">
+                <div class="logo"></div>
+            </div>
+            
+            <div class="nav-address border">
+                <p class="add-1">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-2">India</p>
+                </div>
+            </div>
+            
+            <div class="nav-search"> 
+                <select class="search-select">
+                    <option>Clothes</option>
+                    <option>Men</option>
+                    <option>Women</option>
+                    <option>Kids</option>
+                </select>
+                <input placeholder="Search latest fashion trends..." class="search-input" id="searchInput" autocomplete="off">
+                <div class="search-suggestions" id="searchSuggestions"></div>
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+             <a href="sign-in page.html" style="text-decoration: none; color: inherit;"> 
+            <div class="nav-signin border">
+                <p><span>Hi, sign in</span></p>
+                <p class="nav-2">Account & Lists</p>
+            </div>
+            </a>
+             <a href="Arrow.html" style="text-decoration: none; color: inherit;">
+           <a href="cart.html" style="text-decoration: none; color: inherit;"> 
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">0</span> Cart
+            </div>
+            </a>
+        </div>
+        
+        <div class="panel">
+            <div class="panel-all"><i class="fa-solid fa-bars"></i> All</div>
+            <div class="panel-ops">
+                <p>New Arrivals</p>
+                <p>Men's Fashion</p> 
+                <p>Women's Fashion</p> 
+                <p>Top Brands</p> 
+            </div>
+            <div class="panel-deals">Up to 50% off on Summer Styles</div>
+        </div>
+    </header>
+
+    <!-- Main Categories View -->
+    <div id="mainView">
+        <div class="section-header">
+            <h2 class="section-title">Shop by Category</h2>
+            <span class="section-sub">Find your perfect fit</span>
+        </div>
+
+        <section class="shop-section">
+            <div class="shop-grid">
+                <div class="box category-box" data-category="Mens Casuals">
+                    <div class="box-img-wrap"><img src="https://d1fufvy4xao6k9.cloudfront.net/images/blog/posts/2024/07/hockerty_brown_cotton_polo_shirt_--ar_43_7910f81c-0c67-49c6-a350-b578061a1a81_1.jpg" alt="Men's Casuals" class="box-img"></div>
+                    <div class="box-content">
+                        <h3 class="box-title">Men's Casuals</h3>
+                        <p class="box-desc">T-shirts, jeans, and everyday wear for men.</p>
+                    </div>
+                </div>
+
+                <div class="box category-box" data-category="Womens Ethnic">
+                    <div class="box-img-wrap"><img src="https://www.suratifabric.com/blog/wp-content/uploads/2022/06/Sea-Green-ethnic-wear-for-women.jpg" alt="Women's Ethnic Wear" class="box-img"></div>
+                    <div class="box-content">
+                        <h3 class="box-title">Women's Ethnic Wear</h3>
+                        <p class="box-desc">Beautiful kurtas, sarees, and traditional styles.</p>
+                    </div>
+                </div>
+
+                <div class="box category-box" data-category="Footwear">
+                    <div class="box-img-wrap"><img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/99486859-0ff3-46b4-949b-2d16af2ad421/custom-nike-dunk-high-by-you-shoes.png" alt="Footwear" class="box-img"></div>
+                    <div class="box-content">
+                        <h3 class="box-title">Footwear</h3>
+                        <p class="box-desc">Sneakers, heels, and comfortable daily flats.</p>
+                    </div>
+                </div>
+
+                <div class="box category-box" data-category="Winter">
+                    <div class="box-img-wrap"><img src="https://i5.walmartimages.com/seo/RQYYD-Winter-Coats-for-Men-Men-s-Camel-Stylish-Flying-Leather-Jacket-B3-Bomber-Jacket-Leather-and-Sheepskin-Aviator-Jacket_7bb3328b-ed96-4b11-bb64-a238a038c62c.df3af98abd8aee4f82c6e810fb7963f0.jpeg" alt="Winter Collection" class="box-img"></div>
+                    <div class="box-content">
+                        <h3 class="box-title">Winter Jackets</h3>
+                        <p class="box-desc">Stay warm with our latest jackets, hoodies, and coats.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- HIDDEN PRODUCT VIEW -->
+    <div id="productView" class="hidden">
+        <div class="section-header" style="flex-direction: column; align-items: flex-start;">
+            <button class="back-btn" id="backBtn"><i class="fa-solid fa-arrow-left"></i> Back to Categories</button>
+            <div>
+                <h2 class="section-title" id="dynamicCategoryTitle">Category Name</h2>
+                <span class="section-sub">Showing items for this category</span>
+            </div>
+        </div>
+        
+        <section class="shop-section">
+            <div class="shop-grid" id="dynamicProductGrid"></div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-panel1" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+            <i class="fa-solid fa-chevron-up"></i> Back to Top
+        </div>
+        <div class="footer-4">
+            <div class="pages"><a>Conditions of Use</a><a>Privacy Notice</a></div>
+            <div class="copy-right">© 2026, Arrow.com, Inc. or its affiliates</div>
+        </div>
+    </footer>
+
+    <script src="cloth.js"></script>
+</body>
+</html>

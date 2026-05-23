@@ -1,0 +1,271 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Arrow.css"> <!--css file-->
+</head>
+<body>
+    <header>
+        <div class="navbar"> <!--nav-bar of the home page-->
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+             <a href="https://www.google.co.in/maps/@30.5145926,76.6528112,15z?entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D" style="text-decoration: none; color: inherit;" >
+            <div class="nav-address border">
+                <p class="add-1">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <P class="add-2">India</P>
+                </div>
+            </div>
+            </a>
+
+            
+         <div class="nav-search"> 
+            <select class="search-select">
+                        <option>All</option>
+                        <option>Clothes</option>
+                        <option>Electronics</option>
+                        <option>Furniture</option>
+                        <option>Beauty</option>
+                        <option>Toys</option>
+            </select>
+            <input placeholder="Search Arrow" class="search-input" id="searchInput">
+            <div class="search-suggestions" id="searchSuggestions"></div>
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+         </div>
+         <a href="sign-in page.html" style="text-decoration: none; color: inherit;">
+          <div class="nav-signin border">
+           <p><span>Hi, sign in</span></p>
+           <p class="nav-2">Account & Lists</p>
+         </div>
+         </a>
+          <a href="#" style="text-decoration: none; color: inherit;"> 
+             <div class="nav-return border">
+            <p><span>Returns</span></p>
+            <p class="nav-ret-2">& Order</p>
+         </div>
+          </a>
+         <a href="cart.html" style="text-decoration: none; color: inherit;"> 
+         <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+         </div>
+         </a>
+        </div>
+        <!-- panel  -->
+         <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops">
+                <p>Today's Deals</p>
+                  <p>Customer Service</p> 
+                    <p>Registry</p> 
+                    <p>Gift Cards</p> 
+                    <p>sell</p>
+                
+            </div>
+            <div class="panel-deals">
+                Shop deals in Electronics
+
+            </div>
+         </div>
+            
+        
+    </header>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-msg">
+            <P>You are on arrow.com. You can also shop on Arrow for millions of products with fast local delivery.</P>
+            <a href="#"> Click here to go to arrow.in</a>
+        </div>
+    </div> 
+    <!-- SHOP SECTION -->
+   
+    
+     <div class="section-header">
+        <h2 class="section-title">Shop by Category</h2>
+        <span class="section-sub">Explore what's trending today</span>
+    </div>
+
+    <section class="shop-section">
+        <div class="shop-grid">
+
+            <div class="box" onclick="location.href='cloth.html'">
+                <div class="box-img-wrap">
+                    <img src="box1_image.jpg" alt="Clothes" class="box-img">
+                   
+                </div>
+                <div class="box-content">
+                    <h3 class="box-title">Clothes</h3>
+                    <p class="box-desc">Fresh styles for every season and occasion.</p>
+                    <a class="box-link">See more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box" onclick="location.href='https://www.amazon.in/health-and-personal-care-items/s?k=health+and+personal+care+items'">
+                <div class="box-img-wrap">
+                    <img src="box2_image.jpg" alt="Health & Personal Care" class="box-img">
+                </div>
+                <div class="box-content">
+                    <h3 class="box-title">Health &amp; Personal Care</h3>
+                    <p class="box-desc">Essentials for your daily wellness routine.</p>
+                    <a class="box-link">See more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box" onclick="location.href='https://www.amazon.in/s?k=Furniture&crid=3SKK3MW6J8T8J&sprefix=furniture%2Caps%2C818&ref=nb_sb_noss_2'">
+                <div class="box-img-wrap">
+                    <img src="box3_image.jpg" alt="Furniture" class="box-img">
+                     
+                </div>
+                <div class="box-content">
+                    <h3 class="box-title">Furniture</h3>
+                    <p class="box-desc">Elevate your living space with modern pieces.</p>
+                    <a class="box-link">See more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box" onclick="location.href='https://www.amazon.in/s?k=Electronics&crid=2L97XOPAC8ST4&sprefix=electronics%2Caps%2C10421&ref=nb_sb_noss_2'">
+                <div class="box-img-wrap">
+                    <img src="box4_image.jpg" alt="Electronics" class="box-img">
+                    
+                </div>
+                <div class="box-content">
+                    <h3 class="box-title">Electronics</h3>
+                    <p class="box-desc">The latest gadgets at unbeatable prices.</p>
+                    <a class="box-link">See more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box" onclick="location.href='https://www.amazon.in/s?k=Beauty+Picks&crid=242Y0NNL5HFU7&sprefix=electroni%2Caps%2C2423&ref=nb_sb_noss_2'">
+                <div class="box-img-wrap">
+                    <img src="box5_image.jpg" alt="Beauty Picks" class="box-img">
+                </div>
+                <div class="box-content">
+                    <h3 class="box-title">Beauty Picks</h3>
+                    <p class="box-desc">Top-rated beauty products curated for you.</p>
+                    <a class="box-link">See more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box" onclick="location.href='https://www.amazon.in/s?k=Pet+Care&ref=nb_sb_noss'">
+                <div class="box-img-wrap">
+                    <img src="box6_image.jpg" alt="Pet Care" class="box-img">
+                </div>
+                <div class="box-content">
+                    <h3 class="box-title">Pet Care</h3>
+                    <p class="box-desc">Everything your furry friends need and love.</p>
+                    <a class="box-link">See more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box" onclick="location.href='https://www.amazon.in/s?k=toys&ref=nb_sb_noss'">
+                <div class="box-img-wrap">
+                    <img src="box7_image.jpg" alt="Toys" class="box-img">
+                    
+                </div>
+                <div class="box-content">
+                    <h3 class="box-title">Toys</h3>
+                    <p class="box-desc">Fun and educational toys for all ages.</p>
+                    <a class="box-link">See more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box" onclick="location.href='https://www.amazon.in/s?k=Fashion+Trends&crid=10OOOA1F349XT&sprefix=fashion+trends%2Caps%2C458&ref=nb_sb_noss_1'">
+                <div class="box-img-wrap">
+                    <img src="box8_image.jpg" alt="Fashion Trends" class="box-img">
+                     
+                </div>
+                <div class="box-content">
+                    <h3 class="box-title">Discover Fashion Trends</h3>
+                    <p class="box-desc">This season's most coveted looks, right here.</p>
+                    <a class="box-link">See more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- promo-banner -->
+    <div class="promo-banner">
+        <div class="promo-text">
+            <h2>Find Gifts for Someone Special</h2>
+            <p>Headphones, gadgets, cameras &amp; more — fast delivery guaranteed.</p>
+        </div>
+        <button class="promo-btn" onclick="location.href='https://www.amazon.in/s?k=gifts&ref=nb_sb_noss'">Shop Now <i class="fa-solid fa-arrow-right" style="margin-left:6px;"></i></button>
+    </div>
+    <!-- Footer -->
+    <footer>
+          <div class="footer-panel1" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+            <i class="fa-solid fa-chevron-up"></i> Back to Top
+        </div>
+        <div class="footer-2">
+            <ul>
+                <p>Get to Know Us</p>
+
+             <a>Careers</a>
+
+             <a>Blog</a>
+             <a>About Arrow</a>
+             <a>Investor Relations</a>
+             <a>Arrow Devices</a>
+             <a>Arrow Science</a>
+
+ 
+            </ul>
+            <ul>
+                 <h4>Connect with Us</h4>
+                <a><i class="fa-brands fa-facebook" style="margin-right:7px;"></i>Facebook</a>
+                <a><i class="fa-brands fa-x-twitter" style="margin-right:7px;"></i>Twitter</a>
+                <a><i class="fa-brands fa-instagram" style="margin-right:7px;"></i>Instagram</a>
+ 
+            </ul>
+            <ul>
+                <p>Make Money with Us</p> 
+                <a>Sell on Arrow</a>
+                <a>Sell under Arrow Accelerator</a>
+                <a>Protect and Build Your Brand</a>
+                <a>Arrow Global Selling</a>
+                <a>Supply to Arrow</a>
+                <a>Become an Affiliate</a>
+                <a>Fulfilment by Arrow</a>
+                <a>Advertise Your Products</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Your Account</a>
+                <a>Returns Centre</a>
+                <a>Recalls and Product Safety Alerts</a>
+                <a>100% Purchase Protection</a>
+                <a>Arrow App Download</a>
+                <a>Help</a>
+            </ul>
+        </div>
+        <div class="footer-3">
+            <div class="logo">
+
+            </div>
+        </div>
+        <div class="footer-4">
+            <div class="pages">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads Privacy Choices</a>
+            </div>
+          <div class="copy-right">
+            © 2026, Arrow.com, Inc. or its affiliates
+          </div>
+
+        </div>
+    </footer>
+    <script src="Arrow.js"></script>
+</body>
+</html>
